@@ -56,10 +56,10 @@ const AuthForm = () => {
           value={password}
           onChange={onChange}
           className="authInput"
-          className="authInput authSubmit"
         />
         <input
           type="submit"
+          className="authInput authSubmit"
           value={newAccount ? "Create Account" : "Sign In"}
         />
         {error && <span className="authError">{error}</span>}
