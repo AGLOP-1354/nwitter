@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import AppRouter from './Router';
 import {authService} from "../fbase";
+import TagManager from 'react-gtm-module';
 
+const tagManagerArgs = {
+  gtmId: 'GTM-5Z8926W'
+}
+
+TagManager.initialize(tagManagerArgs);
 function App() {
   const [init, setinit] = useState(false);
   const [isLoggedIn, setIsloggedIn] = useState(false);
